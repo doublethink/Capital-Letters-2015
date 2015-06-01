@@ -31,6 +31,7 @@
             </div><!-- /page  -->
 
             <div id="schedule-page" data-role="page">
+
                 <div data-role="header" data-id="header" id="header" data-position="fixed" class="ui-header">
                     <a href="#home-page"  data-role="button" data-icon="arrow-l" data-inline="true" >Back</a>
                     <h1>Schedule</h1>
@@ -42,31 +43,36 @@
 
                     <fieldset data-role="controlgroup">
                         <legend>
-                            <h3 class="cl-label-p">Keynote</h3>
-                            <p class="cl-label-p">9:00 AM - 9:30 AM</p>
+                            <h3 class="cl-label-margin">9:00 AM - 9:30 AM</h3>
                         </legend>
-                        <input type="radio" name="radio-choice" id="radio-choice1" value="on" checked="checked">
-                        <label for="radio-choice1">
-                            <p class="cl-label-p">Speaker B</p>
-                            <p class="cl-label-p">Short introduction to keynote.</p>
-                        </label>
-                        <input type="radio" name="radio-choice" id="radio-choice2" value="off">
-                        <label for="radio-choice2">
-                            <p class="cl-label-p">Speaker A</p>
-                            <p class="cl-label-p">Short introduction to keynote.</p>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-a" value="on" checked="checked">
+                        <label for="radio-choice-a">
+                            <p class="cl-label-margin big-text">Keynote</p>
+                            <p class="cl-label-margin small-text">Speaker A</p>
+                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
                         </label>
                     </fieldset>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>
+                            <h3 class="cl-label-margin">10:00 AM - 10:30 AM</h3>
+                        </legend>
+                        <input type="radio" name="radio-choice-2" id="radio-choice-b" value="on" checked="checked">
+                        <label for="radio-choice-b">
+                            <p class="cl-label-margin big-text">English is cool</p>
+                            <p class="cl-label-margin small-text">Speaker B</p>
+                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
+                        </label>
+                        <input type="radio" name="radio-choice-2" id="radio-choice-c" value="off">
+                        <label for="radio-choice-c">
+                            <p class="cl-label-margin big-text">English is words</p>
+                            <p class="cl-label-margin small-text">Speaker C</p>
+                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
+                        </label>
+                    </fieldset>
+
                 </div>
 
-                <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
-                    <div id="navbar" data-role="navbar">
-                        <ul>
-                            <li><a id="map-button" href="#schedule-page" data-icon="flat-location" data-theme="b">Map</a></li>
-                            <li><a id="list-button" href="#list-page" data-icon="flat-menu">List</a></li>
-                            <li><a id="search-button" href="#search-page" data-icon="ms-search">Search</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
             <div  id="map-page" data-role="page">

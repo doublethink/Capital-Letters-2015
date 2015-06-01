@@ -57,6 +57,10 @@ margin: .8em 30% .8em;
 }
 
 .cl-label-p {
+    font-size: 5px;
+}
+
+.cl-label-margin {
     margin: 0px;
 }
 
