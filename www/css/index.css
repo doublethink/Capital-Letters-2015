@@ -48,6 +48,10 @@ margin: .8em 30% .8em;
 
 }
 
+.ui-header, .ui-footer {
+    background: #0288D1;
+}
+
 .cl-button {
     background-color: #03A9F4;
 }
