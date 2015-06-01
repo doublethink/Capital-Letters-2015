@@ -56,6 +56,10 @@ margin: .8em 30% .8em;
     background-color: #03A9F4;
 }
 
+.cl-label-p {
+    margin: 0px;
+}
+
 /* home page */
 
 #logo{

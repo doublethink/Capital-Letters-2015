@@ -19,7 +19,7 @@
                         </div>
                     <div id="menu">
                         <a data-icon="flat-time" data-theme="a" href="#schedule-page" data-role="button" class="cl-button">Schedule</a>
-                        <a data-icon="bars" data-theme="a" href="#due-page"  data-role="button" class="cl-button">Key Note</a>
+                        <a data-icon="bars" data-theme="a" href="#due-page"  data-role="button" class="cl-button">Speaker Profiles</a>
                         <fieldset class="ui-grid-a">
                             <div class="ui-block-a"> <a data-icon="flat-location" data-theme="a" href="#map-page"  data-role="button">Map</a></div>
                             <div class="ui-block-b"><a data-icon="ms-question" data-theme="a" href="#about-page"  data-role="button" >About</a></div>
@@ -37,55 +37,27 @@
                 </div>
                 <div data-role="content" >
                     <div id="banner">
-                <h2>
-                    Event Schedule</h2>
-            </div>
-            <p>
-                We have an exciting line-up of ....[Jess to fluff this up]</p>
-            <ul data-role="listview" data-inset="true">
-                <li class="list-item-schedule">
-                    <div class="list-item-content-schedule">
-                        <h3>
-                            Keynote</h3>
-                        <p class="session-time-speaker">
-                            9:00 AM - 9:30 AM&nbsp;&nbsp;Speaker B</p>
-                        <p>
-                            Short introduction to keynote.</p>
+                        <h2>Event Schedule</h2>
                     </div>
-                </li>
-                <li class="list-item-schedule">
-                    <div class="list-item-content-schedule">
-                        <h3>
-                            Session 2</h3>
-                        <p class="session-time-speaker">
-                            10:00 AM - 10:55 AM&nbsp;&nbsp;Speaker D</p>
-                        <p>
-                            Short introduction to session.</p>
-                    </div>
-                </li>
-                <li class="list-item-schedule">
-                    <div class="list-item-content-schedule">
-                        <h3>
-                            Session 3</h3>
-                        <p class="session-time-speaker">
-                            11:00 AM - 12:00 AM&nbsp;&nbsp;Speaker A</p>
-                        <p>
-                            Short introduction to session.</p>
-                    </div>
-                </li>
-                <li class="list-item-schedule">
-                    <div class="list-item-content-schedule">
-                        <h3>
-                            Lunch</h3>
-                        <p class="session-time-speaker">
-                            12:00 PM - 1:30 PM</p>
-                        <p>
-                            Talk about luch here.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>
+                            <h3 class="cl-label-p">Keynote</h3>
+                            <p class="cl-label-p">9:00 AM - 9:30 AM</p>
+                        </legend>
+                        <input type="radio" name="radio-choice" id="radio-choice1" value="on" checked="checked">
+                        <label for="radio-choice1">
+                            <p class="cl-label-p">Speaker B</p>
+                            <p class="cl-label-p">Short introduction to keynote.</p>
+                        </label>
+                        <input type="radio" name="radio-choice" id="radio-choice2" value="off">
+                        <label for="radio-choice2">
+                            <p class="cl-label-p">Speaker A</p>
+                            <p class="cl-label-p">Short introduction to keynote.</p>
+                        </label>
+                    </fieldset>
                 </div>
+
                 <div id="footer" data-role="footer" data-id="footer1" data-position="fixed" data-tap-toggle="false">
                     <div id="navbar" data-role="navbar">
                         <ul>
