@@ -6,7 +6,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#FFFFFF;
+    background-color:#2196F3;
     background-image:linear-gradient(top, #CCC 0%, #FFFFFF 51%);
     background-image:-webkit-linear-gradient(top, #CCC 0%, #FFFFFF 51%);
     background-image:-ms-linear-gradient(top, #CCC 0%, #FFFFFF 51%);
@@ -48,11 +48,15 @@ margin: .8em 30% .8em;
 
 }
 
+#logoContainer {
+    background-color: #FFFFFF;
+}
+
 /* home page */
 
 #logo{
-    width:70%;
-    max-width:206px;
+    width:100%;
+    max-width:350px;
     margin:35px 0 40px;
 }
 .centerText{
@@ -74,7 +78,7 @@ margin: .8em 30% .8em;
 }
 
 /* map */
-#second-page{
+#schedule-page{
    
 }
 .big-text{
