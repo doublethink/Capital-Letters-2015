@@ -45,8 +45,8 @@
                         <legend>
                             <h3 class="cl-label-margin">9:00 AM - 9:30 AM</h3>
                         </legend>
-                        <input type="radio" name="radio-choice-1" id="radio-choice-a" value="on" checked="checked">
-                        <label for="radio-choice-a">
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1-opt1" value="on" checked="checked">
+                        <label for="radio-choice-1-opt1">
                             <p class="cl-label-margin big-text">Keynote</p>
                             <p class="cl-label-margin small-text">Speaker A</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
@@ -57,14 +57,32 @@
                         <legend>
                             <h3 class="cl-label-margin">10:00 AM - 10:30 AM</h3>
                         </legend>
-                        <input type="radio" name="radio-choice-2" id="radio-choice-b" value="on" checked="checked">
-                        <label for="radio-choice-b">
+                        <input type="radio" name="radio-choice-2" id="radio-choice-2-opt1" value="on" checked="checked">
+                        <label for="radio-choice-2-opt1">
                             <p class="cl-label-margin big-text">English is cool</p>
                             <p class="cl-label-margin small-text">Speaker B</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
                         </label>
-                        <input type="radio" name="radio-choice-2" id="radio-choice-c" value="off">
-                        <label for="radio-choice-c">
+                        <input type="radio" name="radio-choice-2" id="radio-choice-2-opt2" value="off">
+                        <label for="radio-choice-2-opt2">
+                            <p class="cl-label-margin big-text">English is words</p>
+                            <p class="cl-label-margin small-text">Speaker C</p>
+                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
+                        </label>
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup">
+                        <legend>
+                            <h3 class="cl-label-margin">11:00 AM - 11:30 AM</h3>
+                        </legend>
+                        <input type="radio" name="radio-choice-3" id="radio-choice-3-opt1" value="on" checked="checked">
+                        <label for="radio-choice-3-opt1">
+                            <p class="cl-label-margin big-text">English is cool</p>
+                            <p class="cl-label-margin small-text">Speaker B</p>
+                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
+                        </label>
+                        <input type="radio" name="radio-choice-3" id="radio-choice-3-opt2" value="off">
+                        <label for="radio-choice-3-opt2">
                             <p class="cl-label-margin big-text">English is words</p>
                             <p class="cl-label-margin small-text">Speaker C</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
@@ -107,6 +125,7 @@
 
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
+            app.initEvents();   //DEBUG!
             app.initialize();
         </script>
     </body>

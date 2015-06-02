@@ -17,7 +17,7 @@
  * under the License.
  */
 var app = {
-    SOME_CONSTANTS : false,  // some constant
+    //SOME_CONSTANTS : false,  // some constant
 
 
     // Application Constructor
@@ -40,9 +40,34 @@ var app = {
     },
     // Phonegap is now ready...
     onDeviceReady: function() {
-        console.log("device ready, start making you custom calls!");
+        //console.log("device ready, start making you custom calls!");
+        $.ajaxSetup ({
+            cache: false
+        });
+        initEvents();
+    },
+    initEvents: function() {
+        if (typeof window.localStorage.radio_choice === 'undefined') {
+            init.setDefaultSchedule();
+        }
+        init.setRadioButtons();
+    }
+};
 
-        // Start adding your code here....
-
+// Separate variable needed for internal function number limitation
+var init = {
+    // Function only called the first time app is launched
+    setDefaultSchedule: function() {
+        var radio_choices = []
+        var radio_defaults = ['radio-choice-1-opt1', 'radio-choice-2-opt1', 'radio-choice-3-opt1'];
+        for (i = 0; i < 3; i++){    // number of storage variables
+            radio_choices[i] = radio_defaults[i];
+        }
+        window.localStorage.radio_choice = JSON.stringify(radio_choices);   //JSON.parse(window.localStorage.radio_choice)
+    },
+    setRadioButtons: function() {
+        $("input[name*=radio-choice-]:checked").each(function() {
+            alert($(this).attr('id'));
+        });
     }
 };
