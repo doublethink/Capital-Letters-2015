@@ -46,7 +46,9 @@ var app = {
         });
         initEvents();
     },
+
     initEvents: function() {
+        localStorage.clear();   //DEBUG REMOVE FOR PERMANENCE
         if (typeof window.localStorage.radio_choice === 'undefined') {
             init.setDefaultSchedule();
         }
@@ -65,6 +67,7 @@ var init = {
         }
         window.localStorage.radio_choice = JSON.stringify(radio_choices);   //JSON.parse(window.localStorage.radio_choice)
     },
+
     setRadioButtons: function() {
         $("input[name*=radio-choice-]:checked").each(function() {
             alert($(this).attr('id'));
