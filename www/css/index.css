@@ -64,6 +64,14 @@ margin: .8em 30% .8em;
     margin: 0px;
 }
 
+fieldset .ui-radio label span .ui-icon-radio-on {
+    background-color: #FF5722;
+}
+
+.ui-controlgroup-controls .ui-btn-inner {
+    background-color: #B3E5FC;
+}
+
 /* home page */
 
 #logo{
