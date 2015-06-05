@@ -22,16 +22,21 @@ var app = {
 
     // Application Constructor
     initialize: function() {
+        $.ajaxSetup ({
+            cache: false
+        });
         console.log("console log init");
-        this.bindEvents();
-        this.initFastClick();
+        this.bindEvents();        
+        this.initRadio();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        this.initFastClick();
+        init.bindonClick();
+        //document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     initFastClick : function() {
         window.addEventListener('load', function() {
@@ -41,23 +46,15 @@ var app = {
     // Phonegap is now ready...
     onDeviceReady: function() {
         //console.log("device ready, start making you custom calls!");
-        $.ajaxSetup ({
-            cache: false
-        });
-        initEvents();
     },
 
-    initEvents: function() {
+    initRadio: function() {
         // initialise array
         if (typeof window.localStorage.radio_choice === 'undefined') {
             var radio_choices = []
-            /*var radio_defaults = ['radio-choice-1-opt1', 'radio-choice-2-opt1'];
-            for (i = 0; i < radio_defaults.length; i++){    // number of storage variables
-                radio_choices[i] = radio_defaults[i];
-            }*/
             window.localStorage.radio_choice = JSON.stringify(radio_choices);
         }
-        init.bindonClick();
+        
         init.setRadioButton();
     }
 };
@@ -103,5 +100,6 @@ var init = {
         }
 
         //$("input[type='radio']").checkboxradio("refresh");
-    }
+    },
+
 };

@@ -9,6 +9,8 @@
     </author>
     <content src="index.html" />
 
+    
+
     <preference name="permissions" value="none"/>
 
     <plugin name="cordova-plugin-whitelist" version="1" />
