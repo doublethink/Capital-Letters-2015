@@ -5,16 +5,16 @@
         Companion application for the Capital Letters 2015 Conference held in Wellington.
     </description>
     <author email="stephen@doublethink.co.nz" href="http://doublethink.co.nz">
-        Doublethink
+        doublethink
     </author>
     <content src="index.html" />
+
+    <preference name="permissions" value="none"/>
+
     <plugin name="cordova-plugin-whitelist" version="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
