@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
 
-    
+    <icon src="img/icon.png"/>
 
     <preference name="permissions" value="none"/>
 
