@@ -5,8 +5,6 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
 
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBwH64jHjvUOfybxpY2zD8alc9ioMZidV0&sensor=true"></script>
-
         <link rel="stylesheet"  href="libs/jQM-flat/jquery.mobile.flatui.css">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 
@@ -16,7 +14,6 @@
         <div id="app">
             <div id="home-page" data-role="page">
                 <div data-role="content" >
-                    <div id="map_canvas" style="height:100%"></div>
                     <div id="logoContainer" class="centerText">
                             <img src="img/logo.png" id="logo"  />
                         </div>
@@ -40,7 +37,11 @@
                 <div data-role="content" >
                     <div id="banner">
                         <h2>Event Schedule</h2>
-                        <p>It's a great time to be thing thing thing</p>
+                        <p>We have a great three days etc etc.</p>
+                    </div>
+
+                    <div id="thurs">
+                        <h2>Thursday the 8th of July</h2>
                     </div>
 
                     <fieldset data-role="controlgroup">
@@ -65,12 +66,6 @@
                             <p class="cl-label-margin small-text">Speaker B</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
                         </label>
-                        <input type="radio" name="radio-choice-2" id="radio-choice-2-opt2">
-                        <label for="radio-choice-2-opt2">
-                            <p class="cl-label-margin big-text">English is words</p>
-                            <p class="cl-label-margin small-text">Speaker C</p>
-                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
-                        </label>
                     </fieldset>
 
                     <fieldset data-role="controlgroup">
@@ -83,12 +78,6 @@
                             <p class="cl-label-margin small-text">Speaker B</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
                         </label>
-                        <input type="radio" name="radio-choice-3" id="radio-choice-3-opt2">
-                        <label for="radio-choice-3-opt2">
-                            <p class="cl-label-margin big-text">English is words</p>
-                            <p class="cl-label-margin small-text">Speaker C</p>
-                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
-                        </label>
                     </fieldset>
 
                     <fieldset data-role="controlgroup">
@@ -99,12 +88,6 @@
                         <label for="radio-choice-4-opt1">
                             <p class="cl-label-margin big-text">English is cool</p>
                             <p class="cl-label-margin small-text">Speaker B</p>
-                            <p class="cl-label-margin small-text">Short introduction to keynote.</p>
-                        </label>
-                        <input type="radio" name="radio-choice-4" id="radio-choice-4-opt2">
-                        <label for="radio-choice-4-opt2">
-                            <p class="cl-label-margin big-text">English is words</p>
-                            <p class="cl-label-margin small-text">Speaker C</p>
                             <p class="cl-label-margin small-text">Short introduction to keynote.</p>
                         </label>
                     </fieldset>

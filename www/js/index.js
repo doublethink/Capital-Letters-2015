@@ -36,7 +36,7 @@ var app = {
     bindEvents: function() {
         this.initFastClick();
         init.bindonClick();
-        //document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     initFastClick : function() {
         window.addEventListener('load', function() {
@@ -71,23 +71,21 @@ var init = {
             //Get control group from current choice
             var id = $(this).attr("id");
             var controlgroup = id.substring(0, id.length - 5);
+            // Get index from id
+            var regex  = /\d+/m;
+            var controlindex = id.match(regex);
 
             // Make changes to existing controlgroups
-            for (var i = 0; i < radio_choices.length; i++){
-                if (controlgroup === radio_choices[i].substring(0, id.length - 5)){
-                    if (id !== radio_choices[i]){
-                        //console.log("adding new to array");
-                        radio_choices[i] = id;
-                        window.localStorage.radio_choice = JSON.stringify(radio_choices);
-                    }
-                    return ;
-                }
+            if (radio_choices[controlindex] == null){
+                radio_choices[controlindex] = id;
+            } else {
+                // remove from list
+                radio_choices[controlindex] = null;
+                $("input[id=" + id + "]").attr("checked",false);
+                $("input[type='radio']").checkboxradio("refresh");
             }
-            
-            // Add to array as checks passed
-            radio_choices[radio_choices.length] = id;
-            window.localStorage.radio_choice = JSON.stringify(radio_choices);
-            
+
+            window.localStorage.radio_choice = JSON.stringify(radio_choices);            
         });
     },
 
@@ -96,10 +94,10 @@ var init = {
         var radio_choices = JSON.parse(window.localStorage.radio_choice);
 
         for (var i = 0; i < radio_choices.length; i++){
-            $("input[id=" + radio_choices[i] + "]").attr("checked","checked");
+            if (radio_choices[i] != null) {
+               $("input[id=" + radio_choices[i] + "]").attr("checked",true);
+            }
         }
-
-        //$("input[type='radio']").checkboxradio("refresh");
     },
 
 };
