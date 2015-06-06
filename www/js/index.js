@@ -34,6 +34,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        this.initZoom();
         this.initFastClick();
         init.bindonClick();
         document.addEventListener('deviceready', this.onDeviceReady, false);
@@ -56,6 +57,10 @@ var app = {
         }
         
         init.setRadioButton();
+    },
+
+    initZoom: function(){
+        $("panzoom-elements").panzoom();
     }
 };
 
