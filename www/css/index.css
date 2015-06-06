@@ -68,6 +68,10 @@ fieldset .ui-radio label span .ui-icon-radio-on {
     background-color: #FF5722;
 }
 
+.schedule-info {
+    background-color: #03A9F4;
+}
+
 .keynote .ui-btn-inner {
    /*background-color: #B3E5FC;*/
 }
