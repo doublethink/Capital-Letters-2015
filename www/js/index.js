@@ -60,7 +60,7 @@ var app = {
     },
 
     initZoom: function(){
-        $("panzoom-elements").panzoom();
+        $(".panzoom-elements").panzoom();
     }
 };
 
