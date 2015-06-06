@@ -83,8 +83,19 @@ fieldset .ui-radio label span .ui-icon-radio-on {
     text-align:center;
 }
 
-img {
+#map {
     max-width: 150%;
+}
+
+.spkimg{
+    text-align: center;
+    width: 100% !important;
+}
+
+.speaker {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
 
 #home-page a{
