@@ -69,7 +69,7 @@ fieldset .ui-radio label span .ui-icon-radio-on {
 }
 
 .keynote .ui-btn-inner {
-   background-color: #B3E5FC;
+   /*background-color: #B3E5FC;*/
 }
 
 /* home page */
@@ -114,10 +114,6 @@ fieldset .ui-radio label span .ui-icon-radio-on {
     background-color: #03A9F4;
 }
 
-/* map */
-#schedule-page{
-   
-}
 .big-text{
     font-size: 1.3em;
 }
